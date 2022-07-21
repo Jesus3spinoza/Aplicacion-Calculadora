@@ -14,17 +14,20 @@
 
 .operaciones-backgroud{
     background-color: var(--operation-background-color);
-    height: 500px;
     border-radius: 1%;
     padding: 0%;
     margin: 0%;
+    justify-content: center;
 }
 
 .operaciones-navbar{
     background-color: var(--operation-headline-color);
+    width: 100%;
 }
 
+
 .operaciones-navbar a{
+    padding-left: 10px;
     color: var(--operation-text-color);
 }
 
@@ -34,6 +37,12 @@
 
 .operaciones-datos{
     padding: 2%;
+    width: 100%;
+}
+
+.print-btn{
+    justify-content: end;
+    display: flex;
 }
 
 #operaciones-textarea{
@@ -44,19 +53,18 @@
 }
 
 .pantallaCalculadora{
-    min-height: 200px;
+    min-height: 300px;
 }
 
 .tecladoCalculadora{
     display: flex;
-    padding: 0%;
+    margin: auto;
     text-align: center;
 }
 
-.teclaNumero{
+.tecla{
+    width: 100%;
     height: 50px;
-}
-
-.teclaOperacion{
-    height: 50px;
+    justify-content: center;
+    display: flex;
 }
