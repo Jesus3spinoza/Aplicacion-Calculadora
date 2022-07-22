@@ -15,7 +15,7 @@
                 <div class="container-fluid">
                     <a class="navbar-brand" href="https://github.com/Jesus3spinoza">Calculadora</a>
                     <button class="navbar-toggler" style="border-color: white; background-color: black;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class=""><i class="fa-solid fa-bars" style="color:white"></i></span>
+                        <span class=""><i class="fa-solid fa-bars"></i></span>
                     </button>
                 </div>
             </nav>
@@ -30,32 +30,32 @@
                         </div>
                         <div class="container-fluid tecladoCalculadora">
                             <div class="col col-teclado">
-                                <div class="row tecla">C</div>
-                                <div class="row tecla">7</div>
-                                <div class="row tecla">4</div>
-                                <div class="row tecla">1</div>
-                                <div class="row tecla">logo</div>
+                                <div class="row tecla"><button class="btn btn-tecla-operacion">X</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla">7</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla">4</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla">1</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla-operacion">C</button></div>
                             </div>
                             <div class="col col-teclado">
-                                <div class="row tecla">%</div>
-                                <div class="row tecla">8</div>
-                                <div class="row tecla">5</div>
-                                <div class="row tecla">2</div>
-                                <div class="row tecla">0</div>
+                                <div class="row tecla"><button class="btn btn-tecla-operacion">%</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla">8</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla">5</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla">2</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla">0</button></div>
                             </div>
                             <div class="col col-teclado">
-                                <div class="row tecla">/</div>
-                                <div class="row tecla">9</div>
-                                <div class="row tecla">6</div>
-                                <div class="row tecla">3</div>
-                                <div class="row tecla">.</div>
+                                <div class="row tecla"><button class="btn btn-tecla-operacion">/</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla">9</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla">6</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla">3</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla">.</button></div>
                             </div>
                             <div class="col col-teclado">
-                                <div class="row tecla">X</div>
-                                <div class="row tecla">-</div>
-                                <div class="row tecla">+</div>
-                                <div class="row tecla">=</div>
-                                <div class="row tecla">delete</div>
+                                <div class="row tecla"><button class="btn btn-tecla-operacion">delete</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla-operacion">-</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla-operacion">+</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla-operacion">=</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla-operacion">enter</button></div>
                             </div>
                         </div>
                     </div>
@@ -65,14 +65,14 @@
                             <div class="col-md-8">
                                 <a class="navbar-brand">Operaciones</a>
                             </div>
-                            <div class="col-md-4 print-btn">
-                                <button class="btn" type="button">
-                                    <span class=""><i class="fa-solid fa-print" style="color:white"></i></span>
+                            <div class="col-md-4 print-btn btn-tecla">
+                                <button class="btn btn-tecla" type="button">
+                                    <span class=""><i class="fa-solid fa-print"></i></span>
                                 </button>
                             </div>
                         </nav>
                         <div class="container operaciones-datos">
-                            <textarea class="form-control" id="operaciones-textarea" rows="3"></textarea>
+                            <textarea class="form-control" id="operaciones-textarea"></textarea>
                         </div>
                     </div>
 
