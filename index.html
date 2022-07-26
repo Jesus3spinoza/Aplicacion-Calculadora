@@ -26,15 +26,20 @@
 
                     <div class="col-md-8">
                         <div class="container-fluid pantallaCalculadora">
+                            <div class="row">
+                                <div class="input-group input-group-lg pantallaCalculadora-datosContenedor">
+                                    <input type="text" class="form-control pantallaCalculadora-datos" aria-label="" aria-describedby="inputGroup-sizing-lg">
+                                </div>
+                            </div>
                             
                         </div>
                         <div class="container-fluid tecladoCalculadora">
                             <div class="col col-teclado">
-                                <div class="row tecla"><button class="btn btn-tecla-operacion">X</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla-operacion">C</button></div>
                                 <div class="row tecla"><button class="btn btn-tecla">7</button></div>
                                 <div class="row tecla"><button class="btn btn-tecla">4</button></div>
                                 <div class="row tecla"><button class="btn btn-tecla">1</button></div>
-                                <div class="row tecla"><button class="btn btn-tecla-operacion">C</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla-operacion"></button></div>
                             </div>
                             <div class="col col-teclado">
                                 <div class="row tecla"><button class="btn btn-tecla-operacion">%</button></div>
@@ -52,10 +57,10 @@
                             </div>
                             <div class="col col-teclado">
                                 <div class="row tecla"><button class="btn btn-tecla-operacion">delete</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla-operacion">x</button></div>
                                 <div class="row tecla"><button class="btn btn-tecla-operacion">-</button></div>
                                 <div class="row tecla"><button class="btn btn-tecla-operacion">+</button></div>
                                 <div class="row tecla"><button class="btn btn-tecla-operacion">=</button></div>
-                                <div class="row tecla"><button class="btn btn-tecla-operacion">enter</button></div>
                             </div>
                         </div>
                     </div>
@@ -65,14 +70,14 @@
                             <div class="col-md-8">
                                 <a class="navbar-brand">Operaciones</a>
                             </div>
-                            <div class="col-md-4 print-btn btn-tecla">
-                                <button class="btn btn-tecla" type="button">
-                                    <span class=""><i class="fa-solid fa-print"></i></span>
+                            <div class="col-md-4 print-btn">
+                                <button class="btn" type="button">
+                                    <span class=""><i class="fa-solid fa-print" style="color:white"></i></span> 
                                 </button>
                             </div>
                         </nav>
                         <div class="container operaciones-datos">
-                            <textarea class="form-control" id="operaciones-textarea"></textarea>
+                            
                         </div>
                     </div>
 

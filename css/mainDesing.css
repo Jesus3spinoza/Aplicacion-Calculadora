@@ -3,6 +3,7 @@
     --operation-background-color:#3E3636;
     --operation-text-color:#F5EDED;
     --operation-headline-color:#D72323;
+
 }
 
 .inicio{
@@ -25,7 +26,6 @@
     width: 100%;
 }
 
-
 .operaciones-navbar a{
     padding-left: 10px;
     color: var(--operation-text-color);
@@ -45,15 +45,32 @@
     display: flex;
 }
 
-#operaciones-textarea{
-    background-color: transparent;
-    border: none;
-    color:var(--operation-text-color);
-    height: 450px;
+.pantallaCalculadora{
+    height: 300px;
+    position:relative;
 }
 
-.pantallaCalculadora{
-    min-height: 300px;
+.pantallaCalculadora-datosContenedor{
+    position:absolute;
+    bottom:50px;
+}
+
+.pantallaCalculadora-datos{
+    background-color: transparent;
+    color: #F5EDED;
+    border:none;
+    text-align: end;
+    border: solid yellow;
+    height: 100px;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.pantallaCalculadora-datos:focus{
+    background-color: transparent;
+    color: #F5EDED;
+    border: solid yellow;
+    box-shadow: none;
 }
 
 .tecladoCalculadora{
@@ -85,13 +102,22 @@
     cursor:pointer;
 }
 
-.btn:focus{
-    border: #000000;
-    color: #F5EDED;
-}
-
 .btn-tecla-operacion:hover{
     color: yellow;
     background-color: #3E3636;
     cursor:pointer;
+}
+
+.btn-tecla:focus{
+    border: #000000;
+    color: #F5EDED;
+}
+
+.btn-tecla-operacion:focus{
+    border: #000000;
+    color: yellow;
+}
+
+.print-btn:hover{
+    border: #000000;
 }
