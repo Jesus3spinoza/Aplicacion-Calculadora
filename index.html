@@ -7,7 +7,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <title>Calculadora</title>
 </head>
-<body>
+<body onload="init();">
     <main>
         <link href="css/mainDesing.css" rel="stylesheet">
         <header>
@@ -28,39 +28,39 @@
                         <div class="container-fluid pantallaCalculadora">
                             <div class="row">
                                 <div class="input-group input-group-lg pantallaCalculadora-datosContenedor">
-                                    <input type="text" class="form-control pantallaCalculadora-datos" aria-label="" aria-describedby="inputGroup-sizing-lg">
+                                    <input id="result" type="text" class="form-control pantallaCalculadora-datos" aria-label="" aria-describedby="inputGroup-sizing-lg">
                                 </div>
                             </div>
                             
                         </div>
                         <div class="container-fluid tecladoCalculadora">
                             <div class="col col-teclado">
-                                <div class="row tecla"><button class="btn btn-tecla-operacion">C</button></div>
-                                <div class="row tecla"><button class="btn btn-tecla">7</button></div>
-                                <div class="row tecla"><button class="btn btn-tecla">4</button></div>
-                                <div class="row tecla"><button class="btn btn-tecla">1</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla-operacion" id="Clear-btn" onclick="clearScreen()"">C</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla" id="7-btn" onclick="addVal('7')">7</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla" id="4-btn" onclick="addVal('4')">4</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla" id="1-btn" onclick="addVal('1')">1</button></div>
                                 <div class="row tecla"><button class="btn btn-tecla-operacion"></button></div>
                             </div>
                             <div class="col col-teclado">
-                                <div class="row tecla"><button class="btn btn-tecla-operacion">%</button></div>
-                                <div class="row tecla"><button class="btn btn-tecla">8</button></div>
-                                <div class="row tecla"><button class="btn btn-tecla">5</button></div>
-                                <div class="row tecla"><button class="btn btn-tecla">2</button></div>
-                                <div class="row tecla"><button class="btn btn-tecla">0</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla-operacion" id="Porcent-btn" onclick="addVal('%')">%</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla" id="8-btn" onclick="addVal('8')">8</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla" id="5-btn" onclick="addVal('5')">5</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla" id="2-btn" onclick="addVal('2')">2</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla" id="0-btn" onclick="addVal('0')">0</button></div>
                             </div>
                             <div class="col col-teclado">
-                                <div class="row tecla"><button class="btn btn-tecla-operacion">/</button></div>
-                                <div class="row tecla"><button class="btn btn-tecla">9</button></div>
-                                <div class="row tecla"><button class="btn btn-tecla">6</button></div>
-                                <div class="row tecla"><button class="btn btn-tecla">3</button></div>
-                                <div class="row tecla"><button class="btn btn-tecla">.</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla-operacion" id="Split-btn" onclick="addVal('/')">/</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla" id="9-btn" onclick="addVal('9')">9</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla" id="6-btn" onclick="addVal('6')">6</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla" id="3-btn" onclick="addVal('3')">3</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla" id="dot-btn" onclick="addVal('.')">.</button></div>
                             </div>
                             <div class="col col-teclado">
-                                <div class="row tecla"><button class="btn btn-tecla-operacion">delete</button></div>
-                                <div class="row tecla"><button class="btn btn-tecla-operacion">x</button></div>
-                                <div class="row tecla"><button class="btn btn-tecla-operacion">-</button></div>
-                                <div class="row tecla"><button class="btn btn-tecla-operacion">+</button></div>
-                                <div class="row tecla"><button class="btn btn-tecla-operacion">=</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla-operacion" id="Delete-btn" onclick="deleteLastVal(document.getElementById('result').value)">delete</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla-operacion" id="Multiply-btn" onclick="addVal('x')">x</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla-operacion" id="Minus-btn" onclick="addVal('-')">-</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla-operacion" id="Plus-btn" onclick="addVal('+')">+</button></div>
+                                <div class="row tecla"><button class="btn btn-tecla-operacion" id="Equals-btn">=</button></div>
                             </div>
                         </div>
                     </div>
@@ -86,6 +86,7 @@
         </div>
     </main>
     <script src="https://kit.fontawesome.com/af08035278.js" crossorigin="anonymous"></script>
+    <script src="/js/MainFunctions.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

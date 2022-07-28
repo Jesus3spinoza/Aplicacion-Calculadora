@@ -98,13 +98,11 @@
 
 .btn-tecla:hover{
     color: #F5EDED;
-    background-color: #3E3636;
     cursor:pointer;
 }
 
 .btn-tecla-operacion:hover{
     color: yellow;
-    background-color: #3E3636;
     cursor:pointer;
 }
 
