@@ -117,11 +117,27 @@ function ResetCalculadora(){
     operandoa = null;
     operandob = null;
     Actualtext = null;
+    document.getElementById("result").value =  null;
 }
 
 function deleteLastVal(val){
     val = val.substring(0, val.length - 1);
     document.getElementById("result").value = val;
+}
+
+function resultOperation(){
+    var Actualtext = (document.getElementById("result").value);
+    var lastChar = (Actualtext.split("")[Actualtext.length-1]);
+    
+    if(operandoa != null && operandob == null){
+        const myArray = Actualtext.split(operacion);
+        operandob = (myArray[1]);
+        var result = doOperation(operandoa,operandob,operacion);
+        clearScreen();
+        print(result);
+        operandoa = result;
+        operandob = null;
+    }
 }
 
 function doOperation(val1, val2, operator){
