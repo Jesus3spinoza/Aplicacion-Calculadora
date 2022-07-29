@@ -135,7 +135,7 @@ function resultOperation(){
         var result = doOperation(operandoa,operandob,operacion);
         clearScreen();
         print(result);
-        operandoa = result;
+        operandoa = null;
         operandob = null;
     }
 }
