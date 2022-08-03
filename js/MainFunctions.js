@@ -26,8 +26,6 @@ function addVal(val){
                     var result = doOperation(operandoa,operandob,operacion);
                     clearScreen();
                     print(result);
-                    operandoa = result;
-                    operandob = null;
                 }
                 if(OperadorLeido == false){
                     operacion = val;
@@ -49,8 +47,6 @@ function addVal(val){
                     var result = doOperation(operandoa,operandob,operacion);
                     clearScreen();
                     print(result);
-                    operandoa = result;
-                    operandob = null;
                 }
                 if(OperadorLeido == false){
                     operacion = val;
@@ -69,8 +65,6 @@ function addVal(val){
                     var result = doOperation(operandoa,operandob,operacion);
                     clearScreen();
                     print(result);
-                    operandoa = result;
-                    operandob = null;
                 }
                 if(OperadorLeido == false){
                     operacion = val;
@@ -89,8 +83,6 @@ function addVal(val){
                     var result = doOperation(operandoa,operandob,operacion);
                     clearScreen();
                     print(result);
-                    operandoa = result;
-                    operandob = null;
                 }
                 if(OperadorLeido == false){
                     operacion = val;
@@ -110,6 +102,8 @@ function print(val){
 
 function clearScreen(){
     document.getElementById("result").value = " ";
+    operandoa = null;
+    operandob = null;
 }
 
 function ResetCalculadora(){
