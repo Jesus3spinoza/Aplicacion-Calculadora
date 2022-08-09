@@ -152,3 +152,7 @@ function doOperation(val1, val2, operator){
             break;
     }
 }
+
+function saveOperation(value){
+    console.log(value);
+}
