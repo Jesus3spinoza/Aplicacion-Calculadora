@@ -51,7 +51,6 @@
     position:relative;
 }
 
-
 .pantallaCalculadora-datosContenedor{
     position:absolute;
     bottom:100px;
@@ -76,8 +75,10 @@
     box-shadow: none;
 }
 
-.SaveOperationBtnDesing{
-    border: solid yellow;
+.SaveOperationBtn{
+    border-top: solid #D72323;
+    border-right: solid #D72323;
+    border-bottom: solid #D72323;
 }
 
 .tecladoCalculadora{
