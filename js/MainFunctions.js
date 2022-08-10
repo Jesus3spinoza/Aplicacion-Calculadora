@@ -152,7 +152,9 @@ function doOperation(val1, val2, operator){
             break;
     }
 }
-
+var nextinput = 0;
 function saveOperation(value){
-    console.log(value);
+nextinput++;
+campo = '<li id="rut'+nextinput+'">Campo:<input type="text" size="20" id="campo' + nextinput + '" name="campo' + nextinput + '"&nbsp; /></li>';
+$("#campos").append(campo);
 }
