@@ -35,15 +35,60 @@
     color: var(--operation-text-color);
 }
 
-.operaciones-datos{
-    padding: 2%;
-    width: 100%;
-    height: 300px;
+#operaciones-datos-head{
+    color:#F5EDED;
 }
 
-.print-btn{
-    justify-content: end;
-    display: flex;
+.operaciones-datos-desing{
+    padding: 2%;
+    width: 100%;
+    height: 500px;
+    overflow-y: scroll;
+    color: #F5EDED;
+}
+
+.contenedorInput{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.subContenedorOperaciones-desing{
+    margin-top: 10px;
+}
+
+.lineaDatos{
+    margin: 5px 0 5px 0;
+}
+
+.valorLeido{
+    color:var(--operation-text-color);
+    margin: 0 5px 0 5px;
+}
+
+.DescripcionValorLeido{
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: #F5EDED;
+}
+
+.btn-delete{
+    background-color: transparent;
+    color: #F5EDED;
+    border: 2px solid #F5EDED;
+    transition-duration: 0.4s;
+    border-radius: 5px;
+}
+
+.btn-delete:hover{
+    background-color: #F5EDED;
+    color:#000000;
+}
+
+.print-btn:focus{
+    border: transparent;
 }
 
 .pantallaCalculadora{
@@ -200,4 +245,16 @@
     font-size:13px;
     color:#aaa;
     margin-bottom:0;
+}
+
+@media screen and (max-width: 400px){
+    .tecla{
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 400px){
+    .tecla{
+        height: 100px;
+    }
 }

@@ -4,12 +4,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Jesus Espinoza">
-    <link href="https://jesus3spinoza.github.io/Aplicacion-Calculadora/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
     <title>Calculadora</title>
 </head>
 <body onload="init();">
     <main>
-        <link href="https://jesus3spinoza.github.io/Aplicacion-Calculadora/css/mainDesing.css" rel="stylesheet">
+        <link href="/css/mainDesing.css" rel="stylesheet">
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
@@ -68,14 +68,25 @@
                             <div class="col-md-8">
                                 <a class="navbar-brand">Operaciones</a>
                             </div>
-                            <div class="col-md-4 print-btn">
-                                <button class="btn" type="button">
-                                    <span class=""><i class="fa-solid fa-print" style="color:white"></i></span> 
+                            <div class="col-md-4 ">
+                                <button class="btn" type="button" style="color: white;" onclick="LimpiarDatos()">
+                                    Limpiar
+                                </button>
+                                <button class="btn printbtn" type="button" style="color:white" onclick="ImprimirDatos('numeroDato', getElementById('descripcion-operacion').value, 'valorLeido')">
+                                    <i class="fa-solid fa-print" style="color:white"></i>
                                 </button>
                             </div>
                         </nav>
-                        <div class="container operaciones-datos" id="campos">
-                            
+                        <div class="container" id="operaciones-datos-head">
+                            <div class="row">
+                                <div class="col-1 order-firt" id="NumeroOperacion">#:</div>
+                                <div class="col-6" id="DescripcionOperacion">Descripcion:</div>
+                                <div class="col-2" id="ValorOperacion">Valor:</div>
+                                <div class="col order-last" id="DeleteOperacion"></div>
+                              </div>
+                              <div class="container operaciones-datos-desing" id="operaciones-datos">
+
+                              </div>
                         </div>
                     </div>
 
@@ -91,7 +102,7 @@
         </div>
     </main>
     <script src="https://kit.fontawesome.com/af08035278.js" crossorigin="anonymous"></script>
-    <script src="https://jesus3spinoza.github.io/Aplicacion-Calculadora/js/MainFunctions.js"></script>
-    <script src="https://jesus3spinoza.github.io/Aplicacion-Calculadora/js/bootstrap.min.js"></script>
+    <script src="/js/MainFunctions.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
 </body>
 </html>
